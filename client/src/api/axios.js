@@ -3,7 +3,7 @@ import Cookies from 'js-cookie';
 
 
 export const API = axios.create({
-  baseURL: 'http://localhost:5000/api',
+  baseURL: 'https://realtime-task-manager-mer.onrender.com/api',
 });
 
 
