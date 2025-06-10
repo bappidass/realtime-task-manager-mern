@@ -19,7 +19,6 @@ A minimal real-time collaborative task management web app built with the MERN st
 **Frontend:**
 - React
 - TailwindCSS
-- Zustand (or Redux Toolkit)
 - Socket.IO Client
 
 **Backend:**
