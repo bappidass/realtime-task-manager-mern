@@ -5,12 +5,13 @@ import {
   toggleTask,
   deleteTask,
 } from '../controllers/taskController.js';
+import { verifyRoutes } from '../middleware/verifyRoutes.js';
 
 const router = express.Router();
 
-router.get('/', getTasks);
-router.post('/', addTask);
-router.patch('/:id/toggle', toggleTask);
-router.delete('/:id', deleteTask);
+router.get('/', verifyRoutes, getTasks);
+router.post('/', verifyRoutes,  addTask);
+router.patch('/:id/toggle', verifyRoutes , toggleTask);
+router.delete('/:id',verifyRoutes, deleteTask);
 
 export default router;
