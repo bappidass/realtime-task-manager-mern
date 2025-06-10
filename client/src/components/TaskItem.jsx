@@ -5,7 +5,7 @@ const TaskItem = ({ task, onToggle, onDelete }) => {
     <div className="flex justify-between items-center p-2 border rounded-lg bg-white shadow-sm">
       <div
         onClick={() => onToggle(task._id)}
-        className={`cursor-pointer select-none ${task.completed ? 'line-through text-gray-400' : ''}`}
+        className={`cursor-pointer select-none ${task.completed ? 'line-through text-blue-200' : ''}`}
       >
         {task.text}
       </div>
